@@ -9,7 +9,7 @@ const CardsSection = () => {
   // Track scroll progress of the section
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start 0.1", "end 0.2"], // Trigger lower on the page
+    offset: ["start 0.8", "end 1"], // Trigger 200px higher (more towards top)
   });
 
   const cards = [
@@ -48,22 +48,36 @@ const CardsSection = () => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  // Universal logic: Hide 4th card initially, then slide all cards left to reveal it
-  const cardWidth = 1000; // Single card width
-  const gapWidth = 12; // Gap between cards
+  // Universal logic with adaptive behavior for smaller screens
+  const cardWidth = 0; // Single card width
+  const gapWidth = 24; // Gap between cards
+  const fourCardsWidth = 4 * cardWidth + 3 * gapWidth; // 1352px total
 
-  // Start position: Show only first 3 cards, 4th card is hidden off-screen to the right
-  const startPosition = 550;
+  let startPosition, endPosition;
 
-  // End position: Slide left by exactly one card width + gap to reveal the 4th card
-  const endPosition = -(cardWidth + gapWidth); // Move left by 344px (320 + 24)
+  if (screenWidth > 0) {
+    // Check if screen can fit all 4 cards comfortably (with some margin)
+    if (screenWidth >= fourCardsWidth + 100) {
+      // Large screens (1920px etc): Standard behavior
+      startPosition = 550;
+      endPosition = -(cardWidth + gapWidth);
+    } else {
+      // Smaller screens (1512px etc): Adjust to fit all cards
+      const availableSpace = screenWidth - 100; // Leave 100px margin
+      const overflow = fourCardsWidth - availableSpace;
+
+      // Start more to the right to accommodate all cards
+      startPosition = 400 + overflow / 2; // Adjust start position
+      endPosition = -(cardWidth + gapWidth) + overflow / 2; // Adjust end position
+    }
+  } else {
+    // Fallback
+    startPosition = 550;
+    endPosition = -(cardWidth + gapWidth);
+  }
 
   // Transform X position based on scroll
-  const x = useTransform(
-    scrollYProgress,
-    [0.5, 3],
-    [startPosition, endPosition]
-  );
+  const x = useTransform(scrollYProgress, [0, 1], [startPosition, endPosition]);
 
   return (
     <section ref={sectionRef} className="py-20 bg-gray-50 overflow-hidden">

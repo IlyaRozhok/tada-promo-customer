@@ -1,17 +1,19 @@
 import React from "react";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
+import HeroWrapper from "./components/HeroWrapper";
+import CardsSection from "./components/CardsSection";
+import PartnersSection from "./components/PartnersSection";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900">
-      {/* Background apartment interior - we'll add this as a background image */}
-      <div className="fixed inset-0 bg-gradient-to-br from-gray-800 to-gray-900 z-0"></div>
+    <div className="min-h-screen bg-white">
+      {/* Hero section with background image */}
+      <HeroWrapper />
 
-      <div className="relative z-10">
-        <Header />
-        <HeroSection />
-      </div>
+      {/* Cards section */}
+      <CardsSection />
+
+      {/* Partners section */}
+      <PartnersSection />
     </div>
   );
 }

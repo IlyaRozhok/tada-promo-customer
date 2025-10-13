@@ -2,50 +2,45 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen flex items-center">
-      {/* Background with apartment interior - we'll add this later */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-transparent z-10"></div>
-
-      <div className="relative z-20 container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left side - Text content */}
-        <div className="text-white space-y-8">
-          <h1 className="font-sf-pro font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[100px]">
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Text content positioned on the left */}
+      <div className="relative z-20 container mx-auto px-4 pt-20 lg:pt-0 lg:flex lg:items-center lg:min-h-screen">
+        <div className="text-white space-y-6 lg:space-y-8 lg:w-1/2 xl:w-2/5">
+          <h1 className="font-sf-pro font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-8xl leading-tight">
             Smarter Leasing. Better Tenants. Faster.
           </h1>
 
-          <p className="font-sf-pro font-semibold text-lg sm:text-xl md:text-2xl leading-8 tracking-[0.22px] max-w-2xl">
+          <p className="font-sf-pro font-semibold text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl leading-7 lg:leading-7 xl:leading-8 tracking-[0.22px] max-w-xl lg:max-w-lg xl:max-w-2xl">
             Renting has been broken for too long — for tenants and for those
             providing homes. Confusing processes, wasted time and missed
             opportunities hurt everyone.
           </p>
         </div>
+      </div>
 
-        {/* Right side - MacBook with website screenshot */}
-        <div className="flex justify-center lg:justify-end">
-          <div className="relative">
-            {/* MacBook frame placeholder */}
-            <div className="relative bg-gray-800 rounded-2xl p-2 shadow-2xl">
-              <div className="bg-black rounded-xl p-4">
-                <div className="bg-white rounded-lg h-96 w-full flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <div className="w-16 h-16 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <svg
-                        className="w-8 h-8"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <p className="text-sm">MacBook + TADA Website</p>
-                    <p className="text-xs mt-1">Images will be added</p>
-                  </div>
-                </div>
-              </div>
+      {/* MacBook positioned on the right side */}
+      <div className="absolute right-[-20%] top-1/2 transform -translate-y-1/2 z-20 hidden lg:block">
+        <div className="relative">
+          {/* MacBook frame - positioned to show most of it with some overflow */}
+          <img
+            src="/src/assets/laptop.png"
+            alt="MacBook Pro"
+            className="w-[1000px] lg:w-[1200px] xl:w-[1400px] h-auto drop-shadow-2xl"
+          />
+
+          {/* MacBook logo on the back */}
+          <div className="absolute bottom-[6%] left-1/2 transform -translate-x-1/2">
+            <img src="/src/assets/macbook-logo.png" alt="MacBook Logo" />
+          </div>
+
+          {/* Website screenshot overlay on MacBook screen */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-[82%] h-[82%] mt-[-2%] overflow-hidden rounded-lg">
+              <img
+                src="/src/assets/tada-stage.png"
+                alt="TADA Property Website"
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
         </div>

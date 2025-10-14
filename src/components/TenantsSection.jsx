@@ -37,7 +37,7 @@ const TenantsSection = () => {
 
   return (
     <section
-      className="py-20 bg-white relative overflow-hidden"
+      className="py-20 relative overflow-hidden"
       style={{
         backgroundImage: "url('/src/assets/tenants-background.jpg')",
         backgroundSize: "cover",
@@ -45,25 +45,28 @@ const TenantsSection = () => {
       }}
     >
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="mb-16">
-          <p className="text-white text-lg font-medium mb-4">For Tenants</p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-sf-pro font-semibold text-white leading-tight max-w-4xl">
+          <p className="text-white text-2xl font-medium mb-4">For Tenants</p>
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-sf-pro font-semibold text-white leading-tight max-w-4xl">
             Rent, Reinvented.
           </h2>
-          <p className="text-white text-lg mt-6 max-w-2xl opacity-90">
+          <p className="text-white text-2xl mt-6 max-w-2xl">
             No more endless scrolling or missed opportunities.
           </p>
         </div>
 
         {/* Animated Cards */}
-        <AnimatedCardsContainer
-          cards={tenantCards}
-          triggerOffset={["start 0.8", "end 1"]}
-        />
+
+        <div className="mt-[100px]">
+          <AnimatedCardsContainer
+            cards={tenantCards}
+            triggerOffset={["start 0.8", "end 1"]}
+          />
+        </div>
       </div>
     </section>
   );

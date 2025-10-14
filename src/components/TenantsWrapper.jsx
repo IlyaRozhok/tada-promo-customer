@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "./Header";
-import HeroSection from "./HeroSection";
+import TenantsSection from "./TenantsSection";
 
-const HeroWrapper = () => {
+const TenantsWrapper = () => {
   return (
-    <section className="relative min-h-screen bg-white">
+    <section className="relative bg-white">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -18,11 +18,10 @@ const HeroWrapper = () => {
 
       {/* Content */}
       <div className="relative z-10">
-        <Header />
-        <HeroSection />
+        <TenantsSection />
       </div>
     </section>
   );
 };
 
-export default HeroWrapper;
+export default TenantsWrapper;

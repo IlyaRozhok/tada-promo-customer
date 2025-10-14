@@ -41,7 +41,7 @@ const AnimatedCardsContainer = ({
     if (screenWidth >= fourCardsWidth + 100) {
       // Large screens (1920px etc): Standard behavior
       startPosition = 550;
-      endPosition = -(cardWidth + gapWidth);
+      endPosition = 0;
     } else {
       // Smaller screens (1512px etc): Adjust to fit all cards
       const availableSpace = screenWidth - 100; // Leave 100px margin

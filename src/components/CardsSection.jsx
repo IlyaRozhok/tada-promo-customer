@@ -26,11 +26,11 @@ const CardsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50 overflow-hidden">
+    <section className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center lg:text-start mb-16">
-          <p className="text-gray-600 text-sm uppercase tracking-wide mb-4">
+          <p className="text-black font-semibold text-md tracking-wide mb-4">
             For BTR Operators, Developers & Landlords
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-sf-pro font-semibold text-gray-900 leading-tight max-w-4xl lg:mx-0 mx-auto">

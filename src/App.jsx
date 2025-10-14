@@ -1,7 +1,7 @@
 import React from "react";
 import HeroWrapper from "./components/HeroWrapper";
 import CardsSection from "./components/CardsSection";
-import TenantsSection from "./components/TenantsSection";
+import TenantsWrapper from "./components/TenantsWrapper";
 import PartnersSection from "./components/PartnersSection";
 
 function App() {
@@ -13,11 +13,10 @@ function App() {
       {/* Cards section */}
       <CardsSection />
 
-      {/* Tenants section */}
-      <TenantsSection />
-
       {/* Partners section */}
       <PartnersSection />
+      {/* Tenants section */}
+      <TenantsWrapper />
     </div>
   );
 }

@@ -40,7 +40,7 @@ const PartnersSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white border-t border-gray-100">
+    <section className="py-20 bg-white border-gray-100">
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-16">

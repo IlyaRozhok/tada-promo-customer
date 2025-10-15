@@ -4,12 +4,12 @@ import TenantsSection from "./TenantsSection";
 
 const TenantsWrapper = () => {
   return (
-    <section className="relative bg-white">
+    <section className="relative bg-white h-[100vh]">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/src/assets/bg.avif')",
+          backgroundImage: "url('/src/assets/tenants-bg.png')",
         }}
       ></div>
 

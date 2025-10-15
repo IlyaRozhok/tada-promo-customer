@@ -50,7 +50,7 @@ const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <button className="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors font-medium">
+        <button className="bg-black cursor-pointer text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors font-medium">
           Request a demo
         </button>
 

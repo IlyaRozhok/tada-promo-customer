@@ -25,7 +25,7 @@ const SpotlightSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="mb-16">
@@ -83,7 +83,7 @@ const SpotlightSection = () => {
           </div>
 
           {/* CTA Button */}
-          <button className="bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-colors mb-8">
+          <button className="bg-black cursor-pointer text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-colors mb-8">
             Book your Spotlight
           </button>
 

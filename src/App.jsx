@@ -3,6 +3,7 @@ import HeroWrapper from "./components/HeroWrapper";
 import CardsSection from "./components/CardsSection";
 import TenantsWrapper from "./components/TenantsWrapper";
 import SpotlightSection from "./components/SpotlightSection";
+import SocialMediaSection from "./components/SocialMediaSection";
 import PartnersSection from "./components/PartnersSection";
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
 
       {/* Spotlight section */}
       <SpotlightSection />
+
+      {/* Social Media section */}
+      <SocialMediaSection />
     </div>
   );
 }

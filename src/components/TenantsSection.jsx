@@ -49,24 +49,21 @@ const TenantsSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <div className="mb-16">
+        <div className="text-center lg:text-start mb-16">
           <p className="text-white text-2xl font-medium mb-4">For Tenants</p>
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-sf-pro font-semibold text-white leading-tight max-w-4xl">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-sf-pro font-semibold text-white leading-tight max-w-4xl lg:mx-0 mx-auto">
             Rent, Reinvented.
           </h2>
-          <p className="text-white text-2xl mt-6 max-w-2xl">
+          <p className="text-white text-2xl mt-6 max-w-2xl lg:mx-0 mx-auto">
             No more endless scrolling or missed opportunities.
           </p>
         </div>
 
         {/* Animated Cards */}
-
-        <div className="mt-[100px]">
-          <AnimatedCardsContainer
-            cards={tenantCards}
-            triggerOffset={["start 0.8", "end 1"]}
-          />
-        </div>
+        <AnimatedCardsContainer
+          cards={tenantCards}
+          triggerOffset={["start 0.8", "end 1"]}
+        />
       </div>
     </section>
   );

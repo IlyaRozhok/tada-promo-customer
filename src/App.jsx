@@ -4,6 +4,7 @@ import CardsSection from "./components/CardsSection";
 import TenantsWrapper from "./components/TenantsWrapper";
 import SpotlightSection from "./components/SpotlightSection";
 import SocialMediaSection from "./components/SocialMediaSection";
+import AboutUsSection from "./components/AboutUsSection";
 import PartnersSection from "./components/PartnersSection";
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
 
       {/* Social Media section */}
       <SocialMediaSection />
+
+      {/* About Us section */}
+      <AboutUsSection />
     </div>
   );
 }

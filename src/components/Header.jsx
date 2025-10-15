@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-gray-900/90 backdrop-blur-sm rounded-lg mx-4 mt-4 px-6 py-4">
+    <header className="bg-gray-900/80 backdrop-blur-md rounded-full mx-6 mt-6 px-8 py-4 shadow-lg">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
@@ -50,7 +50,7 @@ const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <button className="bg-black cursor-pointer text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors font-medium">
+        <button className="bg-black cursor-pointer text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors font-medium">
           Request a demo
         </button>
 

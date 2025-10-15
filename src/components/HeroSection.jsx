@@ -19,27 +19,31 @@ const HeroSection = () => {
       </div>
 
       {/* MacBook positioned on the right side */}
-      <div className="absolute right-[-20%] top-1/2 transform -translate-y-1/2 z-20 hidden lg:block">
+      <div className="absolute right-[-15%] top-1/2 transform -translate-y-1/2 z-20 hidden lg:block">
         <div className="relative">
-          {/* MacBook frame - positioned to show most of it with some overflow */}
+          {/* MacBook frame - smaller size */}
           <img
             src="/src/assets/laptop.png"
             alt="MacBook Pro"
-            className="w-[1000px] lg:w-[1200px] xl:w-[1400px] h-auto drop-shadow-2xl"
+            className="w-[700px] lg:w-[800px] xl:w-[900px] h-auto drop-shadow-2xl"
           />
 
           {/* MacBook logo on the back */}
           <div className="absolute bottom-[6%] left-1/2 transform -translate-x-1/2">
-            <img src="/src/assets/macbook-logo.png" alt="MacBook Logo" />
+            <img
+              src="/src/assets/macbook-logo.png"
+              alt="MacBook Logo"
+              className="h-2.5"
+            />
           </div>
 
-          {/* Website screenshot overlay on MacBook screen */}
+          {/* Website screenshot overlay on MacBook screen - larger */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-[82%] h-[82%] mt-[-2%] overflow-hidden rounded-lg">
+            <div className="w-[82%] h-[88%] mt-[-4%] overflow-hidden rounded-lg">
               <img
                 src="/src/assets/tada-stage.png"
                 alt="TADA Property Website"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

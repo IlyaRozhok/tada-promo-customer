@@ -6,6 +6,7 @@ import SpotlightSection from "./components/SpotlightSection";
 import SocialMediaSection from "./components/SocialMediaSection";
 import AboutUsSection from "./components/AboutUsSection";
 import PartnersSection from "./components/PartnersSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
 
       {/* About Us section */}
       <AboutUsSection />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

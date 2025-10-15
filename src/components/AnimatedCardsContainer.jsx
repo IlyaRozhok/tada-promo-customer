@@ -98,16 +98,19 @@ const AnimatedCardsContainer = ({
               )}
 
               {/* Card Content */}
-              <div className="p-6">
-                {card.title && (
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    {card.title}
-                  </h3>
-                )}
-                <p className="text-gray-700 text-base leading-relaxed">
-                  {card.text || card.description}
-                </p>
-              </div>
+
+              {card.title && (card.text || card.description) && (
+                <div className="p-6">
+                  {card.title && (
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                      {card.title}
+                    </h3>
+                  )}
+                  <p className="text-gray-700 text-base leading-relaxed">
+                    {card.text || card.description}
+                  </p>
+                </div>
+              )}
             </div>
           ))}
         </motion.div>

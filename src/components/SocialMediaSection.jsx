@@ -5,23 +5,19 @@ const SocialMediaSection = () => {
   const socialCards = [
     {
       id: 1,
-      image: "/src/assets/social-1.png", // Placeholder - картинки пока не используем
-      text: "Professional photography and videography for your properties",
+      image: "/src/assets/img_social_00.png", // Placeholder - картинки пока не используем
     },
     {
       id: 2,
-      image: "/src/assets/social-2.png", // Placeholder
-      text: "Curated lifestyle content showcasing local amenities and culture",
+      image: "/src/assets/img_social_01.png", // Placeholder
     },
     {
       id: 3,
-      image: "/src/assets/social-3.png", // Placeholder
-      text: "Social media promotion across TA-DA's channels and networks",
+      image: "/src/assets/img_social_02.png", // Placeholder
     },
     {
       id: 4,
-      image: "/src/assets/social-4.png", // Placeholder
-      text: "Local guides and area insights to attract quality tenants",
+      image: "/src/assets/img_social_03.png", // Placeholder
     },
   ];
 

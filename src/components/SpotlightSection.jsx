@@ -25,7 +25,7 @@ const SpotlightSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section id="spotlight" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="mb-16">

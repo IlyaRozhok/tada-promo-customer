@@ -1,10 +1,9 @@
 import React from "react";
-import Header from "./Header";
 import HeroSection from "./HeroSection";
 
 const HeroWrapper = () => {
   return (
-    <section className="relative min-h-screen bg-white">
+    <section id="hero" className="relative min-h-screen">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -18,7 +17,6 @@ const HeroWrapper = () => {
 
       {/* Content */}
       <div className="relative z-10">
-        <Header />
         <HeroSection />
       </div>
     </section>

@@ -37,6 +37,7 @@ const TenantsSection = () => {
 
   return (
     <section
+      id="tenants"
       className="py-20 relative overflow-hidden"
       style={{
         backgroundImage: "url('/src/assets/tenants-background.jpg')",

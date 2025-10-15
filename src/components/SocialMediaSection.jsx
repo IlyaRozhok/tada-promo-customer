@@ -22,7 +22,7 @@ const SocialMediaSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section id="social-media" className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="mb-16">

@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./components/Header";
 import HeroWrapper from "./components/HeroWrapper";
 import CardsSection from "./components/CardsSection";
 import TenantsWrapper from "./components/TenantsWrapper";
@@ -11,6 +12,9 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      {/* Fixed Header */}
+      <Header />
+
       {/* Hero section with background image */}
       <HeroWrapper />
 

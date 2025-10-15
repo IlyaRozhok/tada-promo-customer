@@ -5,8 +5,8 @@ const HeroSection = () => {
     <div className="relative min-h-screen overflow-hidden">
       {/* Text content positioned on the left */}
       <div className="relative z-20 container mx-auto px-4 pt-20 lg:pt-0 lg:flex lg:items-center lg:min-h-screen">
-        <div className="text-white space-y-6 lg:space-y-8 lg:w-1/2 xl:w-2/5">
-          <h1 className="font-sf-pro font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-8xl leading-tight">
+        <div className="text-white space-y-6 lg:space-y-8 lg:w-1/2 xl:w-2/4">
+          <h1 className="font-sf-pro font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
             Smarter Leasing. Better Tenants. Faster.
           </h1>
 

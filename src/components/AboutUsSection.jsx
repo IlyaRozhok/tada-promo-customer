@@ -35,7 +35,7 @@ const AboutUsSection = () => {
   };
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section id="about-us" className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">

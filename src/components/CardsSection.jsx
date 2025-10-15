@@ -33,7 +33,7 @@ const CardsSection = () => {
           <p className="text-black font-semibold text-md tracking-wide mb-4">
             For BTR Operators, Developers & Landlords
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-sf-pro font-semibold text-gray-900 leading-tight max-w-4xl lg:mx-0 mx-auto">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-sf-pro font-semibold text-gray-900 leading-tight max-w-4xl lg:mx-0 mx-auto">
             Goodbye to endless inbound calls, emails and wasted viewings.
           </h2>
           <p className="text-gray-600 text-lg mt-6 max-w-2xl lg:mx-0 mx-auto">

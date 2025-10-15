@@ -99,7 +99,7 @@ const AnimatedCardsContainer = ({
 
               {/* Card Content */}
 
-              {card.title && (card.text || card.description) && (
+              {(card.title || card.text || card.description) && (
                 <div className="p-6">
                   {card.title && (
                     <h3 className="text-xl font-semibold text-gray-900 mb-3">
